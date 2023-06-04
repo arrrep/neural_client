@@ -1,0 +1,13 @@
+.container {
+  min-height: 85vh;
+  background-image: url("/src/img/pricing-header-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 980px) {
+  .container {
+    background-color: #F8F9FA;
+    background-image: none;
+  }
+}/*# sourceMappingURL=pricingpageheader.module.css.map */

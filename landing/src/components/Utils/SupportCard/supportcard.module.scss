@@ -1,0 +1,33 @@
+@import '../../../styles/breakpoints';
+@import '../../../styles/colors';
+@import '../../../styles/global';
+
+.card {
+  background-color: $white;
+  padding: 2rem;
+  border-radius: $border-radius;
+  box-shadow: $shadow-light;
+  max-width: 35rem;
+
+  h4 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $darkgray;
+  }
+
+  p {
+    color: $font-gray;
+    padding: 1rem 0 2rem;
+  }
+
+  .linkblock *{
+    display: flex;
+    gap: 0.5rem;
+
+    span {
+      width: 17px;
+      height: 17px;
+      background-image: url('../../../img/icon-download.svg');
+      background-repeat: no-repeat;
+    }
+  }
+}

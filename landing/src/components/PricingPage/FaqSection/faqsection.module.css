@@ -1,0 +1,67 @@
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.blue {
+  color: #5187E2;
+}
+
+.red {
+  color: #E25151;
+}
+
+.yellow {
+  color: #FFCF53;
+}
+
+.flex {
+  display: flex;
+}
+
+.cols {
+  flex-direction: column;
+}
+
+.app-wrapper {
+  padding: 2.8rem 6.5rem 0;
+}
+
+@media (max-width: 980px) {
+  .app-wrapper {
+    padding: 1.6rem 4rem 0;
+  }
+}
+@media (max-width: 680px) {
+  .app-wrapper {
+    padding: 1rem 2rem 0;
+  }
+}
+.container {
+  background-image: url("/src/img/pricing-faq-bg.svg");
+  margin: 14rem 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container h1 {
+  padding: 12rem 1.5rem 5rem;
+  max-width: 100%;
+}
+
+.faq {
+  padding-bottom: 12rem;
+  max-width: 70%;
+  margin: 0 auto;
+}/*# sourceMappingURL=faqsection.module.css.map */

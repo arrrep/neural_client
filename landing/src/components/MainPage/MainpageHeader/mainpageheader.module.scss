@@ -1,0 +1,70 @@
+@import '../../../styles/colors';
+@import '../../../styles/breakpoints';
+
+.container {
+  min-height: 100vh;
+  background-image: url('/src/img/main-header-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.images {
+  position: relative;
+  padding-top: 7rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pyramid {
+    display: block;
+    z-index: 1;
+    margin: auto;
+    max-width: 1038px;
+  }
+  .coins {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    max-width: 320px;
+    left: 15%;
+    top: -5%;
+  }
+  .chat {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    max-width: 320px;
+    right: 10%;
+    top: 30%;
+  }
+}
+
+@media (max-width: $screen-medium) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .pyramid {
+    max-width: 200px;
+  }
+  .coins {
+    visibility: hidden;
+  }
+  .chat {
+    visibility: hidden;
+  }
+
+  .images {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: $screen-small) {
+
+  .container {
+    background-image: none;
+    background-color: $lightgray;
+  }
+}

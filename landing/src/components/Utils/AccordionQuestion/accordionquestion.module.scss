@@ -1,0 +1,65 @@
+@import '../../../styles/colors';
+@import '../../../styles/global';
+@import '../../../styles/breakpoints';
+
+.container {
+  padding-bottom: 3rem;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $darkgray;
+  border-radius: $border-radius;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    background-color: darken($darkgray, 3%);
+
+    * {
+      color: darken($font-gray, 10%);
+    }
+  }
+
+  span {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-image: url('../../../img/icon-minus.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.active {
+      background-image: url('../../../img/icon-plus.svg');
+    }
+  }
+
+  h4 {
+    transition: $transition;
+    color: $font-gray;
+  }
+}
+
+.answer {
+  background-color: $white;
+  box-shadow: $shadow-light;
+  border-radius: 0 0 20px 20px;
+  padding: 1rem 2rem 3rem;
+  line-height: 1.8;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: $screen-small) {
+  .question {
+
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+}

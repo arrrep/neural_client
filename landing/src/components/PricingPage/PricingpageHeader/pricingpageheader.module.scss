@@ -1,0 +1,16 @@
+@import '../../../styles/colors';
+@import '../../../styles/breakpoints';
+
+.container {
+  min-height: 85vh;
+  background-image: url('/src/img/pricing-header-bg.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $screen-medium) {
+  .container {
+    background-color: $lightgray;
+    background-image: none;
+  }
+}

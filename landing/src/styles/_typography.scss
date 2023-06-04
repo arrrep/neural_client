@@ -1,0 +1,74 @@
+@import 'colors';
+
+// Typography
+h1 {
+  font-size: clamp(2.5rem, 4rem, 5rem); // 64px
+}
+
+h2 {
+  font-size: clamp(2rem, 3rem, 4rem); // 48px
+}
+
+h3 {
+  font-size: clamp(1.6rem, 2.25rem, 3rem); // 36px
+}
+
+h4 {
+  font-size: 1.5rem; // 24px
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+  color: $font-black;
+}
+
+p {
+  font-size: 1rem; // 16px
+  font-weight: 400;
+  color: $font-black;
+
+  &.light {
+    font-weight: 300;
+  }
+}
+
+a {
+  font-size: 1rem; // 16px
+  font-weight: 300;
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $blue-hover;
+  }
+
+  &.menulink {
+    font-size: 1rem; // 16px
+    font-weight: 400;
+    color: $font-black;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+@media (max-width: $screen-medium) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: $screen-small) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+}

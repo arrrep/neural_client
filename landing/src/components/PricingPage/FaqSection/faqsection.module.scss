@@ -1,0 +1,21 @@
+@import '../../../styles/colors';
+@import '../../../styles/global';
+@import '../../../styles/breakpoints';
+
+.container {
+  background-image: url('/src/img/pricing-faq-bg.svg');
+  margin: 14rem 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h1 {
+    padding: 12rem 1.5rem 5rem;
+    max-width: 100%;
+  }
+}
+
+.faq {
+  padding-bottom: 12rem;
+  max-width: 70%;
+  margin: 0 auto;
+}

@@ -1,0 +1,19 @@
+.container {
+  margin-top: 8rem;
+  padding-top: 10rem;
+  background-image: url("/src/img/main-features-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.items {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 680px) {
+  .container {
+    background-image: none;
+    background-color: #F8F9FA;
+  }
+}/*# sourceMappingURL=mainpagefeatures.module.css.map */

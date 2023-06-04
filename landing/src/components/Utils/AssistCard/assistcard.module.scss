@@ -1,0 +1,15 @@
+@import '../../../styles/breakpoints';
+@import '../../../styles/colors';
+@import '../../../styles/global';
+
+.card {
+  background-color: $white;
+  padding: 2rem;
+  border-radius: $border-radius;
+  max-width: 33%;
+  box-shadow: $shadow-light;
+
+  h4 {
+    padding-bottom: 1rem;
+  }
+}

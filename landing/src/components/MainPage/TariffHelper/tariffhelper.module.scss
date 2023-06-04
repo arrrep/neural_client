@@ -1,0 +1,71 @@
+@import '../../../styles/colors';
+@import '../../../styles/global';
+@import '../../../styles/breakpoints';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem 20rem;
+
+  h1 {
+    max-width: 46rem;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    color: $font-gray;
+    padding-bottom: 6rem;
+    text-align: center;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .card {
+    display: flex;
+    gap: 6rem;
+  }
+  
+  .form {
+    background-color: $lightgray;
+    border-radius: $border-radius;
+    box-shadow: $shadow-form;
+    padding: 2rem;
+    min-height: 23rem;
+  }
+}
+
+.questions {
+  padding-top: 2rem;
+  transition: $transition;
+
+  p {
+    color: $font-black;
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+@media(max-width: $screen-medium) {
+  .card {
+    gap: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media(max-width: $screen-small) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

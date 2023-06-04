@@ -1,0 +1,29 @@
+@import '../../../styles/colors';
+@import '../../../styles/global';
+@import '../../../styles/breakpoints';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+  border-radius: $border-radius;
+}
+
+.items {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: $screen-medium) {
+  .items {
+    width: auto;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

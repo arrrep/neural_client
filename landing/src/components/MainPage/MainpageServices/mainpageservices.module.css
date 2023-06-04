@@ -1,0 +1,27 @@
+.container {
+  padding: 4rem 10rem 11rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+}
+.container img {
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 980px) {
+  .container {
+    padding: 4rem 2rem 11rem;
+  }
+}
+@media (max-width: 680px) {
+  .container {
+    padding: 4rem 1.5rem 7rem;
+    grid-template-columns: 1fr;
+  }
+  .container img {
+    padding-bottom: 11rem;
+  }
+}/*# sourceMappingURL=mainpageservices.module.css.map */

@@ -1,0 +1,22 @@
+@import '../../../styles/breakpoints';
+@import '../../../styles/colors';
+
+.container {
+  margin-top: 8rem;
+  padding-top: 10rem;
+  background-image: url("/src/img/main-features-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.items {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: $screen-small) {
+  .container {
+    background-image: none;
+    background-color: $lightgray;
+  }
+}

@@ -1,0 +1,103 @@
+@import 'colors';
+@import 'global';
+@import 'breakpoints';
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $white;
+  border: none;
+  padding: 0.625rem 2.5rem;
+  border-radius: $border-radius-small;
+  transition: $transition;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: $disabled;
+  color: $disabled-font;
+
+  &:hover {
+    background-color: $disabled;
+    color: $disabled-font;
+  }
+}
+
+.btn {
+  background-color: $blue;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+}
+
+.btn-alt {
+  background-color: $yellow;
+
+  &:hover {
+    background-color: $yellow-hover;
+  }
+}
+
+input {
+  border: 1px solid $darkgray;
+  font-family: 'Poppins',sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 28rem;
+  border-radius: $border-radius-small;
+  padding: 0.7rem 1.5rem;
+  transition: $transition;
+
+  &:focus {
+    outline: none;
+    border: 1px solid darken($darkgray, 10%);
+  }
+}
+
+.gray {
+  background-color: $lightgray;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $disabled-font;
+  border-radius: $border-radius-small;
+}
+
+select {
+  appearance: none;
+  font-family: 'Poppins';
+  font-size: 1rem;
+  font-weight: 300;
+  border: none;
+  color: $blue;
+  background-color: transparent;
+  border-bottom: 2px solid $toggle-active;
+  background-image: url('../img/icon-dropdown.svg');
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  padding: 0 1.5rem 2px 0.5rem;
+  transition: $transition;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    background-image: url('../img/icon-dropup.svg');    
+  }
+
+  option {
+    color: $font-black;
+  } 
+}
+
+
+@media (max-width: $screen-small) {
+  input {
+    width: 18rem;
+  }
+}
